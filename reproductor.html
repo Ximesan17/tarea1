@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reproductor</title>
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0f25780317.js" crossorigin="anonymous"></script>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.audioControls.min.js"></script>
+
+	<script src="js/funciones.js"></script>
+
+	<style>
+		.type
+		{
+			background-color: ;
+			border-radius: 10px;
+			margin: 5px;
+		}
+		.tepy
+		{
+			background-color: blueviolet;
+			border-radius: 10px;
+			margin: 5px;
+		}
+		.botoncabera
+		{
+			background-color: blueviolet;
+			border-radius: 20px;
+		}
+		.boton
+		{
+			background-color: blueviolet;
+			border-radius: 40px;
+		}
+	</style>
+</head>
+<body>
+	
+<section class="row mt-5">
+
+<main class="col-md-5 type">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-auto botoncabera">
+				<div class="botonones">
+					<i class="fa-solid fa-arrow-left"></i>
+				</div>
+			</div>
+			<div class="col-auto botoncabera">
+				<p class="d-none d-md-block d-lg-block">Ahora</p>
+				<p class="d-block d-md-none d-lg-none">Reproduciendo ahora</p>
+			</div>
+			<div class="col-auto botoncabera">
+				<div class="botones">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="row text-center mt-4">
+			<div class="col">
+				<img src="rauw-alejandro-saturno.png" width="150px">
+			</div>
+		</div>
+
+		<div class="row mt-2">
+			<div class="row text-center">
+				<h1><span class="col-3 nombremp3"></span></h1>
+				<span class=" audioTime" data-attr="timer"></span>
+			</div>
+		</div>
+
+		<div class="row">
+
+		<div class="row justify-content-between">
+			<div>
+				<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  				<div class="progress-bar updateProgress"></div>
+			</div>
+
+		</div>
+
+			<div class="col-auto boton mt-4">
+				<div class="botones">
+					<i class="fa-solid fa-backward"></i>
+				</div>
+			</div>
+
+			<div class="col-auto boton mt-4">
+				<div class="botones">
+					<i class="fa-solid fa-play"></i>
+				</div>
+			</div>
+
+			<div class="col-auto boton mt-4">
+				<div class="botones">
+					<i class="fa-solid fa-forward"></i>
+				</div>
+			</div>
+		</div>
+
+		<!--button class="btn btn-primary">bootstrap</button>
+		<i class="fa-solid fa-arrow-left"></i-->
+	</div>
+	</main>
+
+	<aside class="col-md-5 tepy">
+
+		<div class="container">
+	
+		<ul class="list-group mt-5 playlist">
+  <li class="list-group-item" data-src="audios/Rauw Alejandro - Cosa Guapa (Audio Oficial).mp3">
+  	<a href="#">Rauw Alejandro - Cosa Guapa (Audio Oficial)</a>
+  </li>
+  <li class="list-group-item" data-src="audios/NO ME SUELTES - Rauw Alejandro (Official Audio).mp3">
+  	 <a href="#">NO ME SUELTES - Rauw Alejandro (Official Audio)</a>
+  </li>
+  <li class="list-group-item" data-src="audios/Rauw Alejandro - Cuándo Fue (Audio Oficial).mp3">
+  	 <a href="#">Rauw Alejandro - Cuándo Fue (Audio Oficial)</a>
+  </li>
+  <li class="list-group-item" data-src="audios/Rauw Alejandro - Desenfocao (Video Oficial).mp3">
+  	  <a href="#">Rauw Alejandro - Desenfocao (Video Oficial)</a>
+  </li>
+  <li class="list-group-item" data-src="audios/Rauw Alejandro  J Balvin  De Cora  (Official Video).mp3">
+  	 <a href="#">Rauw Alejandro  J Balvin  De Cora  (Official Video)</a>
+  </li>
+ 
+</ul>
+
+	<hr>
+
+</div>
+
+	</aside>
+
+</section>
+</body>
+</html>
